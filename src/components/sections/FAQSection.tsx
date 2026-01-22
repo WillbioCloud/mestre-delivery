@@ -6,32 +6,37 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
-import { menuInfo } from "@/data/menu";
 
 const faqs = [
   {
-    question: "Qual o tempo médio de entrega?",
-    answer: `Nosso tempo médio de entrega é de ${menuInfo.deliveryTime}. Em dias de maior movimento (sextas e finais de semana), pode haver uma pequena variação.`,
+    question: "Em quanto tempo minha pizzaria fica no ar?",
+    answer:
+      "Em até 48 horas você já pode ter o site, cardápio e fluxo de pedidos funcionando.",
   },
   {
-    question: "Quais formas de pagamento vocês aceitam?",
-    answer: `Aceitamos: ${menuInfo.paymentMethods.join(", ")}. Para pagamento em dinheiro, informe se precisa de troco no campo de observações.`,
+    question: "Preciso baixar algum aplicativo?",
+    answer:
+      "Não. Tudo funciona no navegador, tanto para os clientes quanto para a gestão da pizzaria.",
   },
   {
-    question: "Vocês entregam em qual região?",
-    answer: "Fazemos entregas em toda a cidade e região. A taxa de entrega varia conforme a distância. Informe seu bairro ao fazer o pedido para confirmarmos o valor.",
+    question: "Posso usar meu domínio e identidade visual?",
+    answer:
+      "Sim! Personalizamos cores, logo e domínio para manter sua marca em destaque.",
   },
   {
-    question: "Os adicionais são cobrados?",
-    answer: `Não cobramos pelos seguintes adicionais: ${menuInfo.freeAdditions.join(", ")}. Para outros adicionais, consulte pelo WhatsApp.`,
+    question: "Como recebo os pedidos?",
+    answer:
+      "Os pedidos chegam no WhatsApp da pizzaria e também ficam registrados no painel para acompanhamento.",
   },
   {
-    question: "Posso personalizar minha pizza?",
-    answer: "Sim! Você pode fazer observações específicas para cada pizza no carrinho, como 'sem cebola', 'borda recheada', 'bem assada', etc.",
+    question: "Existe taxa por pedido?",
+    answer:
+      "Não cobramos comissão por pedido. Você paga apenas a mensalidade do plano escolhido.",
   },
   {
-    question: "Qual o tamanho das pizzas?",
-    answer: "Nossas pizzas tradicionais e doces são no tamanho grande, com 8 fatias. Ideais para 2-3 pessoas.",
+    question: "Vocês oferecem suporte?",
+    answer:
+      "Sim, nosso time acompanha todo o onboarding e permanece disponível para suporte contínuo.",
   },
 ];
 
@@ -48,7 +53,7 @@ export function FAQSection() {
             Perguntas Frequentes
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Encontre respostas para as dúvidas mais comuns sobre nossos serviços.
+            Respostas rápidas para quem quer digitalizar a pizzaria com segurança.
           </p>
         </div>
 

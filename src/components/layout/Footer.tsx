@@ -4,8 +4,9 @@ import logo from "@/assets/logo-mestre-das-pizzas.png";
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "/cardapio", label: "Cardápio" },
-  { href: "/#combos", label: "Promoções" },
+  { href: "/cardapio", label: "Demo do cardápio" },
+  { href: "/#recursos", label: "Recursos" },
+  { href: "/#planos", label: "Planos" },
   { href: "/contato", label: "Contato" },
 ];
 
@@ -24,8 +25,8 @@ export function Footer() {
               className="h-20 w-auto brightness-0 invert"
             />
             <p className="text-primary-foreground/80 text-sm">
-              Pizzas artesanais feitas com amor e ingredientes selecionados. 
-              Sabor que conquista!
+              Plataforma completa para pizzarias venderem mais com cardápio online, pedidos diretos
+              e dados inteligentes.
             </p>
             <div className="flex gap-4">
               <a
@@ -62,32 +63,29 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Hours */}
+          {/* Benefits */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4">Horário</h3>
-            <ul className="space-y-2 text-primary-foreground/80">
+            <h3 className="font-display text-lg font-semibold mb-4">Por que usar</h3>
+            <ul className="space-y-2 text-primary-foreground/80 text-sm">
               <li className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
-                <span>Terça a Domingo</span>
+                <span>Implantação rápida em até 48h</span>
               </li>
-              <li className="ml-6">18:00 - 23:00</li>
-              <li className="text-sm mt-2 text-primary-foreground/60">
-                Segunda-feira: Fechado
+              <li className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <span>Suporte humano via WhatsApp</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span>Domínio e identidade visual personalizados</span>
               </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4">Contato</h3>
-            <ul className="space-y-3 text-primary-foreground/80">
-              <li className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span>
-                  Rua da Pizza, 123<br />
-                  Centro - Sua Cidade, GO
-                </span>
-              </li>
+            <h3 className="font-display text-lg font-semibold mb-4">Comercial</h3>
+            <ul className="space-y-3 text-primary-foreground/80 text-sm">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 <a
@@ -96,6 +94,10 @@ export function Footer() {
                 >
                   (64) 99318-2960
                 </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span>Atendimento remoto em todo o Brasil</span>
               </li>
             </ul>
           </div>

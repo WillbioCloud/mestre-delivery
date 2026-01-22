@@ -6,7 +6,9 @@ const WHATSAPP_NUMBER = "5564993182960";
 
 export function HeroSection() {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Gostaria de fazer um pedido na Mestre das Pizzas 🍕");
+    const message = encodeURIComponent(
+      "Olá! Quero uma demonstração da plataforma Mestre Delivery para minha pizzaria."
+    );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
   };
 
@@ -30,13 +32,13 @@ export function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
         <div className="max-w-3xl mx-auto animate-fade-in">
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-shadow-lg">
-            Pizza quentinha, sabor de verdade 🍕
+            Sua pizzaria vendendo mais com um site pronto para pedidos 🍕
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-4 text-white/90 text-shadow">
-            Tempo médio de entrega: <span className="font-semibold text-accent">50 minutos</span>
+            Plataforma completa com cardápio, carrinho e WhatsApp integrados.
           </p>
           <p className="text-base md:text-lg mb-8 text-white/80">
-            Combos especiais para toda a família • Pizzas artesanais com ingredientes selecionados
+            Lance sua operação digital em dias e acompanhe resultados com dados em tempo real.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -46,7 +48,7 @@ export function HeroSection() {
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-6 px-8 gap-2 shadow-lg hover:shadow-xl transition-all"
             >
               <MessageCircle className="h-6 w-6" />
-              Pedir no WhatsApp
+              Quero uma demonstração
             </Button>
             <Button
               onClick={scrollToMenu}
@@ -54,7 +56,7 @@ export function HeroSection() {
               variant="outline"
               className="border-white text-white hover:bg-white/20 font-semibold text-lg py-6 px-8"
             >
-              Ver Cardápio
+              Ver cardápio de exemplo
             </Button>
           </div>
         </div>

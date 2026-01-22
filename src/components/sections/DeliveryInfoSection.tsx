@@ -10,11 +10,14 @@ export function DeliveryInfoSection() {
           <div className="text-center mb-10">
             <Badge className="bg-accent text-accent-foreground mb-4">
               <MapPin className="h-4 w-4 mr-1" />
-              Entrega
+              Configurações
             </Badge>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Informações de Entrega
+              Informações de entrega configuráveis
             </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Exemplo de como sua pizzaria pode personalizar prazos, taxas e adicionais no painel.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

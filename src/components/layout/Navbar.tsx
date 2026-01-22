@@ -7,8 +7,9 @@ import logo from "@/assets/logo-mestre-das-pizzas.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/cardapio", label: "Cardápio" },
-  { href: "/#combos", label: "Promoções" },
+  { href: "/cardapio", label: "Demo do cardápio" },
+  { href: "/#recursos", label: "Recursos" },
+  { href: "/#planos", label: "Planos" },
   { href: "/contato", label: "Contato" },
 ];
 
@@ -20,7 +21,9 @@ export function Navbar() {
   const { totalItems, setIsCartOpen } = useCart();
 
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Gostaria de fazer um pedido na Mestre das Pizzas 🍕");
+    const message = encodeURIComponent(
+      "Olá! Quero falar com o time sobre a plataforma Mestre Delivery."
+    );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
   };
 
@@ -77,7 +80,7 @@ export function Navbar() {
               className="hidden md:flex bg-accent hover:bg-accent/90 text-accent-foreground font-semibold gap-2"
             >
               <MessageCircle className="h-5 w-5" />
-              Pedir no WhatsApp
+              Agendar demo
             </Button>
 
             {/* Mobile Menu Button */}
@@ -115,7 +118,7 @@ export function Navbar() {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold gap-2 mt-2"
               >
                 <MessageCircle className="h-5 w-5" />
-                Pedir no WhatsApp
+                Agendar demo
               </Button>
             </div>
           </div>
