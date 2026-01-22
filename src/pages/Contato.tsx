@@ -5,14 +5,15 @@ import { CartDrawer } from "@/components/CartDrawer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MessageCircle, MapPin, Clock, Phone, CreditCard } from "lucide-react";
-import { menuInfo } from "@/data/menu";
+import { MessageCircle, Phone, Rocket, Headphones, BadgeCheck } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5564993182960";
 
 const Contato = () => {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Gostaria de fazer um pedido na Mestre das Pizzas 🍕");
+    const message = encodeURIComponent(
+      "Olá! Quero agendar uma demonstração da plataforma Mestre Delivery."
+    );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
   };
 
@@ -24,13 +25,13 @@ const Contato = () => {
           <div className="text-center mb-12">
             <Badge className="bg-accent text-accent-foreground mb-4">
               <Phone className="h-4 w-4 mr-1" />
-              Contato
+              Demonstração
             </Badge>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Fale Conosco
+              Fale com nosso time
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Estamos prontos para atender você! Faça seu pedido pelo WhatsApp.
+              Vamos mostrar como sua pizzaria pode vender mais com pedidos diretos e gestão simples.
             </p>
           </div>
 
@@ -39,9 +40,9 @@ const Contato = () => {
             <Card className="mb-8 bg-green-500/10 border-green-500/30">
               <CardContent className="p-8 text-center">
                 <MessageCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
-                <h2 className="font-display text-2xl font-bold mb-2">Peça pelo WhatsApp</h2>
+                <h2 className="font-display text-2xl font-bold mb-2">Agende sua demonstração</h2>
                 <p className="text-muted-foreground mb-6">
-                  Clique no botão abaixo para fazer seu pedido diretamente pelo WhatsApp!
+                  Clique no botão abaixo e fale com nosso time comercial agora mesmo.
                 </p>
                 <Button
                   onClick={handleWhatsAppClick}
@@ -49,66 +50,51 @@ const Contato = () => {
                   className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-6 px-8 gap-2"
                 >
                   <MessageCircle className="h-6 w-6" />
-                  (64) 99318-2960
+                  Agendar no WhatsApp
                 </Button>
               </CardContent>
             </Card>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Hours */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-3 rounded-full bg-accent/10">
-                      <Clock className="h-6 w-6 text-accent" />
+                      <Rocket className="h-6 w-6 text-accent" />
                     </div>
-                    <h3 className="font-display text-xl font-semibold">Horário de Funcionamento</h3>
+                    <h3 className="font-display text-xl font-semibold">Implantação rápida</h3>
                   </div>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li><strong>Terça a Domingo:</strong> 18:00 - 23:00</li>
-                    <li className="text-destructive"><strong>Segunda:</strong> Fechado</li>
-                  </ul>
-                  <p className="mt-4 text-sm text-muted-foreground">
-                    Tempo médio de entrega: <strong className="text-accent">{menuInfo.deliveryTime}</strong>
+                  <p className="text-muted-foreground">
+                    Publicamos seu site em até 48 horas com domínio e identidade visual personalizados.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Payment */}
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-3 rounded-full bg-accent/10">
-                      <CreditCard className="h-6 w-6 text-accent" />
+                      <Headphones className="h-6 w-6 text-accent" />
                     </div>
-                    <h3 className="font-display text-xl font-semibold">Formas de Pagamento</h3>
+                    <h3 className="font-display text-xl font-semibold">Suporte humano</h3>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {menuInfo.paymentMethods.map((method) => (
-                      <Badge key={method} variant="secondary" className="text-sm">
-                        {method}
-                      </Badge>
-                    ))}
-                  </div>
+                  <p className="text-muted-foreground">
+                    Atendimento direto por WhatsApp para tirar dúvidas e ajustar seu cardápio.
+                  </p>
                 </CardContent>
               </Card>
 
-              {/* Address */}
-              <Card className="md:col-span-2">
+              <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-3 rounded-full bg-accent/10">
-                      <MapPin className="h-6 w-6 text-accent" />
+                      <BadgeCheck className="h-6 w-6 text-accent" />
                     </div>
-                    <h3 className="font-display text-xl font-semibold">Localização</h3>
+                    <h3 className="font-display text-xl font-semibold">Treinamento do time</h3>
                   </div>
-                  <p className="text-muted-foreground mb-4">
-                    Rua da Pizza, 123 - Centro<br />
-                    Sua Cidade, GO
+                  <p className="text-muted-foreground">
+                    Ajudamos sua equipe a operar o fluxo de pedidos e aproveitar as campanhas.
                   </p>
-                  <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
-                    <p className="text-muted-foreground">Mapa em breve</p>
-                  </div>
                 </CardContent>
               </Card>
             </div>

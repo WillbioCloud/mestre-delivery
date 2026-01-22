@@ -77,14 +77,14 @@ export function MenuSection({ showSearch = true, fullPage = false }: MenuSection
           <div className="text-center mb-12">
             <Badge className="bg-accent text-accent-foreground mb-4">
               <UtensilsCrossed className="h-4 w-4 mr-1" />
-              Nosso Cardápio
+              Cardápio digital
             </Badge>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Escolha sua Pizza Favorita
+              Demonstração do cardápio online
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Pizzas artesanais feitas com ingredientes frescos e muito amor. 
-              Adicionais grátis: tomate, cebola e milho! 🍅🧅🌽
+              Mostre todos os sabores com fotos, preços e descrições em um layout que vende mais. 
+              Ajuste valores e categorias sempre que precisar.
             </p>
           </div>
         )}
@@ -168,7 +168,7 @@ export function MenuSection({ showSearch = true, fullPage = false }: MenuSection
                       className="w-full gap-2 hover:bg-accent hover:text-accent-foreground transition-colors"
                     >
                       <Plus className="h-4 w-4" />
-                      Adicionar
+                      Adicionar ao carrinho
                     </Button>
                   </CardContent>
                 </Card>

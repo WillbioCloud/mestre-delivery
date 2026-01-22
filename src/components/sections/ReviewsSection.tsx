@@ -4,22 +4,22 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    name: "Maria S.",
+    name: "Pizzaria Bella Notte",
     rating: 5,
-    text: "Melhor pizza da cidade! A calabresa é simplesmente divina. Entrega sempre no prazo e pizza quentinha. Recomendo demais!",
-    date: "Há 2 semanas",
+    text: "Em 30 dias, aumentamos os pedidos diretos em 42%. O cardápio ficou lindo e fácil de atualizar.",
+    date: "Cliente há 2 meses",
   },
   {
-    name: "João P.",
+    name: "Forno & Lenha",
     rating: 5,
-    text: "Peço toda semana o Combo Família. Preço justo, pizzas enormes e muito saborosas. A família toda aprova!",
-    date: "Há 1 semana",
+    text: "Saímos dos apps e passamos a vender pelo nosso próprio site. O suporte ajudou em toda a implantação.",
+    date: "Cliente há 4 meses",
   },
   {
-    name: "Ana C.",
+    name: "Dom Pietro Pizzaria",
     rating: 5,
-    text: "A pizza de chocolate com morango é sensacional! Perfeita para sobremesa. Atendimento excelente pelo WhatsApp.",
-    date: "Há 3 dias",
+    text: "Os relatórios mostram exatamente o que vender e quais campanhas repetir. Crescemos o ticket médio.",
+    date: "Cliente há 6 meses",
   },
 ];
 
@@ -33,10 +33,10 @@ export function ReviewsSection() {
             Avaliações
           </Badge>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            O que nossos clientes dizem
+            Pizzarias que já estão vendendo mais
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A satisfação dos nossos clientes é nossa maior recompensa!
+            Resultados reais de quem adotou o Mestre Delivery no dia a dia.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export function ReviewsSection() {
                     <p className="text-sm text-muted-foreground">{review.date}</p>
                   </div>
                   <Badge variant="secondary" className="text-xs">
-                    Cliente Verificado
+                    Pizzaria verificada
                   </Badge>
                 </div>
               </CardContent>

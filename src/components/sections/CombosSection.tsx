@@ -37,13 +37,13 @@ export function CombosSection() {
         <div className="text-center mb-12">
           <Badge className="bg-wine text-wine-foreground mb-4">
             <Sparkles className="h-4 w-4 mr-1" />
-            Promoções Especiais
+            Promoções inteligentes
           </Badge>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Combos & Promoções
+            Combos que aumentam o ticket médio
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Economize com nossos combos especiais! Perfeitos para compartilhar com a família e amigos.
+            Exemplo de promoções que você pode configurar para incentivar pedidos maiores.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export function CombosSection() {
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold gap-2"
                 >
                   <MessageCircle className="h-4 w-4" />
-                  Pedir este combo
+                  Simular pedido
                 </Button>
               </CardContent>
             </Card>

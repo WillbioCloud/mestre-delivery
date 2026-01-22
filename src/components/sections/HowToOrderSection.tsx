@@ -28,13 +28,13 @@ export function HowToOrderSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-accent text-accent-foreground mb-4">
-            Super Fácil
+            Experiência do cliente
           </Badge>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Como Fazer seu Pedido
+            Como o cliente final compra
           </h2>
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
-            Pedir sua pizza favorita nunca foi tão fácil! Siga estes 3 passos simples.
+            Mostre uma jornada de compra simples para transformar visitantes em pedidos reais.
           </p>
         </div>
 
